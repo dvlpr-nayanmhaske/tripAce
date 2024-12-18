@@ -15,7 +15,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         height: double.infinity,
         width: double.infinity,
         color: Colors.white,
@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 hintText: '+ 91 Enter your Mobile Number',
-                hintStyle: TextStyle(color: Colors.grey),
+                hintStyle: const TextStyle(color: Colors.grey),
               ),
             ),
             heightBox(25.h),
@@ -97,7 +97,7 @@ class LoginScreen extends StatelessWidget {
             heightBox(25.h),
             Row(
               children: [
-                Expanded(child: Divider()),
+                const Expanded(child: Divider()),
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: Text(
@@ -108,7 +108,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: Divider(),
                 ),
               ],
@@ -136,7 +136,7 @@ class LoginScreen extends StatelessWidget {
     return IconButton(
       onPressed: () {},
       icon: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           height: 56.h,
           width: 100.w,
           decoration: BoxDecoration(

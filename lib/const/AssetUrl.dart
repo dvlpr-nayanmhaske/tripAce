@@ -17,4 +17,21 @@ class Asseturl {
   static String igrentalCar = "assets/icon/rentalcar.svg";
   static String igTrain = "assets/icon/train.svg";
   static String igDiscount = "assets/icon/discount.svg";
+  static String igThings = "assets/icon/thingstodo.svg";
+  static String igRestaurants = "assets/icon/restaurants.svg";
+  static String icTravel = "assets/image/travel.gif";
+  static String icAiplaner = "assets/icon/aiplanner.svg";
+  static String igParis = "assets/image/paris.png";
+  static String igJapan = "assets/image/japan.png";
+  static String igIland = "assets/image/iland.png";
+  static String igBali = "assets/image/Bali.png";
+  static String igCard1 = "assets/image/timetotravel.png";
+  static String igCard2 = "assets/image/travel2.png";
+  static String igCard3 = "assets/image/mantravel.png";
+  static String igMountBromo = "assets/image/mountBromo.png";
+  static String igMountains = "assets/image/Mountains.png";
+  static String igBeach = "assets/image/beach.png";
+  static String igJapan2 = "assets/image/japan2.png";
+  static String igMaldives = "assets/image/Maldives.png";
+  static String icOffer = "assets/icon/discount.svg";
 }

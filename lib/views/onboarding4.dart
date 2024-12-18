@@ -6,7 +6,7 @@ import 'package:travel/const/utility.dart';
 import 'package:travel/main.dart';
 
 class Onboarding4 extends StatefulWidget {
-  Onboarding4({super.key});
+  const Onboarding4({super.key});
 
   @override
   State<Onboarding4> createState() => _Onboarding4State();
@@ -29,7 +29,7 @@ class _Onboarding4State extends State<Onboarding4> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         height: double.infinity,
         width: double.infinity,
         color: Colors.white,
@@ -55,14 +55,14 @@ class _Onboarding4State extends State<Onboarding4> {
                   onTap: () {
                     selectedtabindex = index;
                     setState(() {
-                      Future.delayed(Duration(seconds: 1), () {
+                      Future.delayed(const Duration(seconds: 1), () {
                         GoRouter.of(context).goNamed(
                             "LoginScreen"); //here we call router in set state
                       });
                     });
                   },
                   child: Container(
-                    padding: EdgeInsets.all(3),
+                    padding: const EdgeInsets.all(3),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(

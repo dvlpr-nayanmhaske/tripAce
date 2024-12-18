@@ -43,17 +43,17 @@ class Travel extends StatelessWidget {
       GoRoute(
         path: "/LoginScreen",
         name: Routes.LoginScreen.name,
-        builder: (context, state) => LoginScreen(),
+        builder: (context, state) => const LoginScreen(),
       ),
       GoRoute(
         path: "/otpScreen",
         name: Routes.OtpScreen.name,
-        builder: (context, state) => OtpScreen(),
+        builder: (context, state) => const OtpScreen(),
       ),
       GoRoute(
         path: "/homescreen",
         name: Routes.HomeScreen.name,
-        builder: (context, state) => HomeScreen(),
+        builder: (context, state) => const HomeScreen(),
       )
     ],
   );

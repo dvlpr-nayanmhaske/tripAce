@@ -51,33 +51,34 @@ class _SplashScreenState extends State<SplashScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          color: Colors.white,
-          child: Column(
-            children: [
-              heightBox(192.h),
-              Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  SvgPicture.asset(Asseturl.igLogo),
-                  Positioned(
-                    left: 46.w,
-                    bottom: 37.h,
-                    child: Image.asset(Asseturl.icLogo2),
-                  ),
-                ],
-              ),
-              heightBox(45.h),
-              Gif(
-                width: 345.w,
-                height: 337.h,
-                fit: BoxFit.cover,
-                controller: _gifController,
-                image: AssetImage(Asseturl.icMap),
-              ),
-            ],
-          )),
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.white,
+        child: Column(
+          children: [
+            heightBox(192.h),
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                SvgPicture.asset(Asseturl.igLogo),
+                Positioned(
+                  left: 46.w,
+                  bottom: 37.h,
+                  child: Image.asset(Asseturl.icLogo2),
+                ),
+              ],
+            ),
+            heightBox(45.h),
+            Gif(
+              width: 345.w,
+              height: 337.h,
+              fit: BoxFit.cover,
+              controller: _gifController,
+              image: AssetImage(Asseturl.icMap),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

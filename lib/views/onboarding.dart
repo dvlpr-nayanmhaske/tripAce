@@ -10,7 +10,7 @@ import 'package:travel/const/utility.dart';
 
 class Onboarding extends StatefulWidget {
   // Changed to StatefulWidget
-  Onboarding({super.key});
+  const Onboarding({super.key});
 
   @override
   State<Onboarding> createState() => _OnboardingState();

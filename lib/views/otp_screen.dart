@@ -18,7 +18,7 @@ class OtpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         height: double.infinity,
         width: double.infinity,
         color: Colors.white,
@@ -60,11 +60,11 @@ class OtpScreen extends StatelessWidget {
               child: Pinput(
                 length: 4, // Number of OTP fields
                 defaultPinTheme: PinTheme(
-                  textStyle: TextStyle(fontWeight: FontWeight.bold),
+                  textStyle: const TextStyle(fontWeight: FontWeight.bold),
                   height: 60.h, // Fixed height
                   width: 60.w, // Fixed width
-                  margin:
-                      EdgeInsets.symmetric(horizontal: 5), // Uniform spacing
+                  margin: const EdgeInsets.symmetric(
+                      horizontal: 5), // Uniform spacing
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black38), // Default border
                     borderRadius: BorderRadius.circular(8.r),
@@ -73,11 +73,11 @@ class OtpScreen extends StatelessWidget {
 
                 // Focused border styling
                 focusedPinTheme: PinTheme(
-                  textStyle: TextStyle(fontWeight: FontWeight.bold),
+                  textStyle: const TextStyle(fontWeight: FontWeight.bold),
                   height: 60.h,
                   width: 60.w,
-                  margin:
-                      EdgeInsets.symmetric(horizontal: 5), // Prevents shifting
+                  margin: const EdgeInsets.symmetric(
+                      horizontal: 5), // Prevents shifting
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.green, width: 2),
                     borderRadius: BorderRadius.circular(8.r),
@@ -86,11 +86,11 @@ class OtpScreen extends StatelessWidget {
 
                 // Submitted border styling
                 submittedPinTheme: PinTheme(
-                  textStyle: TextStyle(fontWeight: FontWeight.bold),
+                  textStyle: const TextStyle(fontWeight: FontWeight.bold),
                   height: 60.h,
                   width: 60.w,
-                  margin:
-                      EdgeInsets.symmetric(horizontal: 5), // Prevents shifting
+                  margin: const EdgeInsets.symmetric(
+                      horizontal: 5), // Prevents shifting
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.green),
                     borderRadius: BorderRadius.circular(8.r),
