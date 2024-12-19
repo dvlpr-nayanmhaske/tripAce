@@ -138,7 +138,7 @@ class OtpScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  GoRouter.of(context).goNamed(Routes.HomeScreen.name);
+                  GoRouter.of(context).goNamed(Routes.Home.name);
                 },
                 child: Text(
                   "Submit",

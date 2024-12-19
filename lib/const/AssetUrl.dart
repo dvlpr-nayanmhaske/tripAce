@@ -1,3 +1,4 @@
+// ignore: file_names
 class Asseturl {
   static String igLogo = "assets/icon/tripacelogo.svg";
   static String icLogo2 = "assets/image/logo2.png";
@@ -33,5 +34,20 @@ class Asseturl {
   static String igBeach = "assets/image/beach.png";
   static String igJapan2 = "assets/image/japan2.png";
   static String igMaldives = "assets/image/Maldives.png";
+
+  static String igHoliday = "assets/image/Holiday.png";
   static String icOffer = "assets/icon/discount.svg";
+  static String igFlighticon = "assets/icon/flight.svg";
+  static String igPoster1 = "assets/image/Flights.png";
+  static String ighome = "assets/icon/home.svg";
+  static String igexplore = "assets/icon/explore.svg";
+  static String ignews = "assets/icon/news.svg";
+  static String ighotel = "assets/icon/hotel.svg";
+  static String igthings = "assets/icon/things.svg";
+  static String igfood = "assets/icon/food.svg";
+  static String icMountFanjing = "assets/image/Mountfanjing.png";
+  static String icTajmahal = "assets/image/tajMahal.png";
+  static String icWall = "assets/image/wall.png";
+  static String iglocation = "assets/icon/location.svg";
+  static String igStar = "assets/icon/star.svg";
 }

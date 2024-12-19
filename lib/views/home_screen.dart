@@ -1,17 +1,55 @@
+import 'dart:developer';
+
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:provider/provider.dart';
 import 'package:travel/const/AssetUrl.dart';
 import 'package:travel/const/colorpallate.dart';
 import 'package:travel/const/typography.dart';
 import 'package:travel/const/utility.dart';
+
 import 'package:travel/main.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+// class SpecialOfferClass {
+//   String? title1;
+//   String? title2;
+//   String? title3;
+//   String? title4;
+//   String? title5;
+//   String? cardicon;
+//   String? image;
+//   SpecialOfferClass(
+//       {this.title1,
+//       this.title2,
+//       this.title3,
+//       this.title4,
+//       this.title5,
+//       this.cardicon,
+//       this.image});
+// }
+
+// List<SpecialOfferClass> categoryList6 = [
+//   SpecialOfferClass(
+//     cardicon: Asseturl.icFlighticon,
+//     title1: "Flights",
+//     title2: "New User Offer",
+//     title3: "Sign up & enjoy a discount on your first flight booking with us!",
+//     title4: "Use Code:ACEFIRST",
+//     title5: "Valid till: 30th Nov, 2024",
+//     image: Asseturl.igPoster1,
+//   )
+// ];
 class Category {
   String icon;
   String? title;
-  Category({required this.icon, this.title});
+
+  Category({
+    required this.icon,
+    this.title,
+  });
 }
 
 List<Category> categoryList1 = [
@@ -38,6 +76,7 @@ List<Category> categoryList5 = [
   Category(icon: Asseturl.igJapan2, title: "Japan"),
   Category(icon: Asseturl.igMaldives, title: "Maldives"),
 ];
+
 List<Category> CardList = [
   Category(
     icon: Asseturl.igCard1,
@@ -83,9 +122,12 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 children: [
                   heightBox(100.h),
-                  Text(
-                    "Hello,",
-                    style: TextStyle(fontSize: 14.sp),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Text(
+                      "Hello,",
+                      style: TextStyle(fontSize: 14.sp),
+                    ),
                   ),
                   Text(
                     " Nayan!",
@@ -103,15 +145,18 @@ class _HomeScreenState extends State<HomeScreen> {
                         TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500),
                   ),
                   widthBox(10.w),
-                  CircleAvatar(
-                    backgroundColor: Colors.grey.shade200,
-                    radius: 19.r,
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.person,
-                        color: AppColors.PrimaryColor,
-                        size: 20,
+                  GestureDetector(
+                    onTap: () {},
+                    child: CircleAvatar(
+                      backgroundColor: Colors.grey.shade200,
+                      radius: 19.r,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.person,
+                          color: AppColors.PrimaryColor,
+                          size: 20,
+                        ),
                       ),
                     ),
                   ),
@@ -697,12 +742,118 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              Row(
-                children: List.generate(
-                  2,
-                  (index) => Container(),
+              SizedBox(
+                height: 238.h,
+                width: double.infinity,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  children: List.generate(
+                    2,
+                    (index) => Container(
+                      margin: EdgeInsets.only(right: 10),
+                      height: 220.h,
+                      width: 171.w,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16.r),
+                      ),
+                      child: Stack(
+                        children: [
+                          Image.asset(Asseturl.igPoster1),
+                          Positioned(
+                            top: 78.h,
+                            right: 11.w,
+                            child: Container(
+                              height: 18.h,
+                              width: 63.w,
+                              decoration: BoxDecoration(
+                                color: Color(0xffF9F9F9),
+                                borderRadius: BorderRadius.circular(50.r),
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  CircleAvatar(
+                                    radius: 6.5.r,
+                                    backgroundColor: AppColors.PrimaryColor,
+                                    child: SvgPicture.asset(
+                                      Asseturl.igFlighticon,
+                                      height: 9.17.h,
+                                      width: 9.17.w,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Flights",
+                                    style: TextStyle(
+                                      fontSize: 10.sp,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            top: 100,
+                            left: 10,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "New User Offer",
+                                  style: TextStyle(
+                                      fontSize: 14.sp,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Sign up & enjoy a discount on\nyour first flight booking with us!",
+                                  style: TextStyle(
+                                    fontSize: 10.sp,
+                                  ),
+                                ),
+                                heightBox(8.h),
+                                DottedBorder(
+                                  borderPadding: EdgeInsets.all(1.5),
+                                  borderType: BorderType.RRect,
+                                  radius: Radius.circular(5),
+                                  color: AppColors.PrimaryColor,
+                                  dashPattern: [4, 4],
+                                  strokeWidth: 0.3,
+                                  child: Container(
+                                    height: 25.h,
+                                    width: 148.w,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xffEDF5FA),
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Use Code:  ACEFIRST",
+                                        style: TextStyle(
+                                          fontSize: 10.sp,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                heightBox(10.h),
+                                Text(
+                                  "Valid till: 30th Nov, 2024",
+                                  style: TextStyle(
+                                    fontSize: 10.sp,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
