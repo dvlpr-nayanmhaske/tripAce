@@ -180,10 +180,16 @@ class ExploreScreen extends StatelessWidget {
                 fontFamily: Typo.ManoSemiBold,
               ),
             ),
-            ListView(
-              children: List.generate(
-                placesList.length,
-                (index) => Container(),
+            Expanded(
+              child: ListView(
+                children: List.generate(
+                  placesList.length,
+                  (index) => Container(
+                    height: 144.h,
+                    width: 144.h,
+                    
+                  ),
+                ),
               ),
             )
           ],
