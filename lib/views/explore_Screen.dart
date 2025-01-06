@@ -175,7 +175,7 @@ class ExploreScreen extends StatelessWidget {
             ),
             heightBox(31.h),
             Text(
-              "Explore Trending Places",
+              "Explore jkfhkrg PHVU",
               style: TextStyle(
                 fontFamily: Typo.ManoSemiBold,
               ),
@@ -187,7 +187,6 @@ class ExploreScreen extends StatelessWidget {
                   (index) => Container(
                     height: 144.h,
                     width: 144.h,
-                    
                   ),
                 ),
               ),

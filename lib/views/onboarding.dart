@@ -76,8 +76,8 @@ class _OnboardingState extends State<Onboarding> {
                     ],
                   ),
                   Positioned(
-                    bottom: 70,
-                    left: 20,
+                    bottom: 70.h,
+                    left: 20.w,
                     child: SmoothPageIndicator(
                       controller: pageController,
                       count: 3,

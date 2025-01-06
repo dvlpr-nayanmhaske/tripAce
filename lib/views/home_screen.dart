@@ -155,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         icon: Icon(
                           Icons.person,
                           color: AppColors.PrimaryColor,
-                          size: 20,
+                          size: 20.sp,
                         ),
                       ),
                     ),
@@ -171,7 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     boxShadow: [
                       BoxShadow(
                         offset: const Offset(1, 8),
-                        blurRadius: 8,
+                        blurRadius: 8.r,
                         color: Colors.black.withOpacity(
                           0.02,
                         ),
@@ -271,8 +271,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               heightBox(25.h),
               Container(
-                width: 345,
-                height: 144,
+                width: 345.w,
+                height: 144.h,
                 decoration: ShapeDecoration(
                   gradient: LinearGradient(
                     begin: Alignment(-1, -0.03),
@@ -283,13 +283,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   shape: RoundedRectangleBorder(
-                    side: BorderSide(width: 1, color: Color(0xFF6C757D)),
+                    side: BorderSide(width: 1.w, color: Color(0xFF6C757D)),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   shadows: [
                     BoxShadow(
                       color: Color(0x002F4858),
-                      blurRadius: 4,
+                      blurRadius: 4.r,
                       offset: Offset(0, 4),
                       spreadRadius: 0,
                     )
@@ -476,8 +476,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 145,
-                      width: 345,
+                      height: 145.h,
+                      width: 345.w,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
@@ -657,7 +657,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     categoryList4.length,
                     (index) => Container(
                       padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.only(right: 25),
+                      margin: EdgeInsets.only(right: 25.w),
                       width: 161.w,
                       height: 238.h,
                       decoration: BoxDecoration(
@@ -796,8 +796,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           Positioned(
-                            top: 100,
-                            left: 10,
+                            top: 100.h,
+                            left: 10.w,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -817,7 +817,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 DottedBorder(
                                   borderPadding: EdgeInsets.all(1.5),
                                   borderType: BorderType.RRect,
-                                  radius: Radius.circular(5),
+                                  radius: Radius.circular(5.r),
                                   color: AppColors.PrimaryColor,
                                   dashPattern: [4, 4],
                                   strokeWidth: 0.3,
@@ -826,7 +826,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     width: 148.w,
                                     decoration: BoxDecoration(
                                       color: Color(0xffEDF5FA),
-                                      borderRadius: BorderRadius.circular(5),
+                                      borderRadius: BorderRadius.circular(5.r),
                                     ),
                                     child: Center(
                                       child: Text(
